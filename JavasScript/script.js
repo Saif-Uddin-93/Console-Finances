@@ -14,13 +14,16 @@ for(let i = 0; i < totalMonths; i++)
 //The average of the changes in Profit/Losses over the entire period.
 /* You will need to track what the total change in Profit/Losses are from month to month and then find the average.
 (Total/(Number of months - 1)) */
-let avg = 0;
+let avg = 0; //Average Change: -2315.12
+let avgArr = [];
 for (let i = 1; i < totalMonths; i++) 
 {
     let difference = financesArr[i][1]-financesArr[i-1][1];
     avg += difference;
+    avgArr.push(difference);
 }
-avg = avg/totalMonths;
+avg = avg/avgArr.length;
+
 
 //The greatest increase in Profit/Losses (date and amount) over the entire period.
 //The greatest increase by default is -Infinity
