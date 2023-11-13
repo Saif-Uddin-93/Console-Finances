@@ -50,22 +50,28 @@ for (let i = 1; i < totalMonths; i++){
     }
 }
 
+var options = {
+    style: "currency", 
+    currency: "USD", 
+    minimumFractionDigits: 0, 
+    maximumFractionDigits:2
+}//https://www.joshmcarthur.com/til/2018/04/11/til-tolocalestring.html
 
 console.log(
 `Financial Analysis
 ----------------
 Total Months: ${totalMonths}
 Total: $${netProfitLoss}
-Average Change: $${avg}
+Average Change: ${avg.toLocaleString("en-US", options)}
 Greatest Increase in Profits/Losses: ${monthIncrease[0]} ($${monthIncrease[1]})
 Greatest Decrease in Profits/Losses: ${monthDecrease[0]} ($${monthDecrease[1]})`
 );
-/* alert(
-`Financial Analysis
+ /*
+Financial Analysis 
 ----------------
-Total Months: ${totalMonths}
-Total: $${netProfitLoss}
-Average Change: $${avg}
-Greatest Increase in Profits/Losses: ${monthIncrease[0]} ($${monthIncrease[1]})
-Greatest Decrease in Profits/Losses: ${monthDecrease[0]} ($${monthDecrease[1]})`
-); */
+Total Months: 86
+Total: $38382578
+Average Change: -2315.12
+Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
+Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)  
+*/
