@@ -5,7 +5,7 @@ let totalMonths = financesArr.length;
 
 //The net total amount of Profit/Losses over the entire period.
 let netProfitLoss = 0;
-for(let i = 0; i<totalMonths; i++)
+for(let i = 0; i < totalMonths; i++)
 {
     netProfitLoss += financesArr[i][1];
 }
@@ -60,3 +60,12 @@ Average Change: $${avg}
 Greatest Increase in Profits/Losses: ${monthIncrease[0]} ($${monthIncrease[1]})
 Greatest Decrease in Profits/Losses: ${monthDecrease[0]} ($${monthDecrease[1]})`
 );
+/* alert(
+`Financial Analysis
+----------------
+Total Months: ${totalMonths}
+Total: $${netProfitLoss}
+Average Change: $${avg}
+Greatest Increase in Profits/Losses: ${monthIncrease[0]} ($${monthIncrease[1]})
+Greatest Decrease in Profits/Losses: ${monthDecrease[0]} ($${monthDecrease[1]})`
+); */
