@@ -74,7 +74,7 @@ var options = {
 console.log(
 `Financial Analysis
 ----------------
-Total Months: ${totalMonths.toLocaleString("en-US", options)}
+Total Months: ${totalMonths}
 Total: ${netProfitLoss.toLocaleString("en-US", options)}
 Average Change: ${avg.toLocaleString("en-US", options)}
 Greatest Increase in Profits/Losses: ${monthIncrease[0]} (${monthIncrease[1].toLocaleString("en-US", options)})
