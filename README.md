@@ -2,19 +2,19 @@
 
 ## Description
 
-This project was created to practive the practical uses of loops and arrays in JavaScript. In this practice, the scenario given was to output to the console a financial analysis of a dataset to determine the following: 
+This project was created to practice the practical uses of loops and arrays in JavaScript. In this practice, the scenario given was to output to the console a financial analysis of a dataset to determine the following: 
 
 * Total months, 
 * The total net profit/loss, 
-* Average change inbetween months, 
+* Average change in between months, 
 * Greatest increase in profit,
 * Greatest loss
 
 These help with identifying key information from the dataset to see if a particular business period was profitable and see if that data correlates with other aspects of business that may explain the profit/loss.
 
-Main things I've learnt from this project is:
+The main things I've learned from this project are:
 * How to use string interpolation in JavaScript,
-* How to format numbers to region specific formats which helps with the localisation of applications.
+* How to format numbers to region-specific formats which helps with the localisation of applications.
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ For this project, the developer tool I'll be using is VS Code. A lightweight IDE
 
 Below is a screenshot of the console output of the published webpage:
 
-![alt text](./assets/images/screenshot.png)
+![screenshot of console output](./assets/images/screenshot.png)
 
 
 ## Credits
