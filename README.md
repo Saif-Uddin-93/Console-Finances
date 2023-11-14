@@ -31,7 +31,7 @@ For this project, the developer tool I'll be using is VS Code. A lightweight IDE
 
 Below is a screenshot of the console output of the published webpage:
 
-![screenshot of console output](./assets/images/screenshot.png)
+![screenshot of console output](./assets/Images/screenshot.png)
 
 
 ## Credits
