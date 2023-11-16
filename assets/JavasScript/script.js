@@ -46,10 +46,11 @@ for (let i = 1; i < totalMonths; i++){
 let monthDecrease = [];
 let greatestDecrease = Infinity;
 for (let i = 1; i < totalMonths; i++){
+    let month = financesArr[i][0]
     let difference = financesArr[i][1] - financesArr[i-1][1];
     if(greatestDecrease > difference){
         greatestDecrease = difference;
-        monthDecrease = [financesArr[i][0], difference];
+        monthDecrease = [month, difference];
     }
 }
 
@@ -64,13 +65,15 @@ Average Change: -2315.12
 Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
 Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)  
 */
-var options = {
+let options = {
     style: "currency", 
     currency: "USD", 
     minimumFractionDigits: 0, 
     maximumFractionDigits:2
 }//https://www.joshmcarthur.com/til/2018/04/11/til-tolocalestring.html
 
+
+// For the console.log(), I purposefully avoided using concatenation and \n in the multi-line string to make it more readable.
 console.log(
 `Financial Analysis
 ----------------
